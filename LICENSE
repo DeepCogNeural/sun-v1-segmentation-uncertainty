@@ -1,0 +1,97 @@
+Repository License Terms
+========================
+
+No single license applies to this repository as a whole. This repository is a
+research-code aggregate containing original contributions, collaborative lab
+code, and bundled third-party code. Each component retains its own copyright
+and license status. A top-level license must not be read as relicensing any
+third-party or collaborative material.
+
+1. Original contributions by Linghao Xu
+----------------------------------------
+
+To the extent Linghao Xu owns copyright in original, standalone contributions
+in this repository, and only to that extent, those contributions are offered
+under the MIT License below. This grant excludes bundled or adapted upstream
+material, collaborative material owned by others, and contributions to files
+whose upstream license governs the resulting work.
+
+MIT License
+
+Copyright (c) 2026 Linghao Xu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the covered contributions and associated documentation files (the
+"Software"), to deal in the Software without restriction, including without
+limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom
+the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+2. Component-specific terms
+---------------------------
+
+The following paths have explicit upstream license or provenance notices:
+
+* `src/seg/models_deep_seg.py` is licensed under GNU GPL version 3, as stated
+  in its file header by Jonathan Vacher. The header does not state an
+  "or later" option. See https://www.gnu.org/licenses/gpl-3.0.en.html.
+
+* `src/toolbox.py` and `src/toolbox_deep.py` are licensed under Creative
+  Commons Attribution-NonCommercial-ShareAlike 4.0 International
+  (CC BY-NC-SA 4.0), as stated in their file headers by Jonathan Vacher.
+  See https://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+* `src/seg/gmm_prior.py` and `src/seg/smm_prior.py` state that they reuse code
+  and comments from `sklearn.mixture.gmm` and identify modifications by
+  Jonathan Vacher and Luis Carlos Garcia-Peraza Herrera. The reused
+  scikit-learn material remains under scikit-learn's BSD 3-Clause License.
+  Preserve the applicable upstream copyright notice, BSD conditions, and
+  disclaimer, as well as the modification credits in the source files. See
+  https://github.com/scikit-learn/scikit-learn/blob/main/COPYING. The source
+  headers do not identify the exact scikit-learn release that was reused, so
+  this repository does not supply a version-specific upstream notice.
+
+* The `loadmat_h5` function in `src/import_utils.py` is marked as coming from
+  https://github.com/rkp8000/loadmat_h5. That upstream repository has no
+  license file; its README invites users to copy and paste the function but
+  does not state license terms granting the usual rights to modify and
+  redistribute it. The MIT grant above does not cover this function. Do not
+  assume rights beyond the upstream statement and applicable law; obtain
+  permission from the upstream copyright holder or replace the function if
+  broader rights are required.
+
+Other files described as collaborative lab code are not automatically covered
+by Linghao Xu's MIT grant. If a file or contribution cannot be clearly
+identified as either Linghao Xu's original work or material governed by one of
+the notices above, no additional permission is granted by this terms file.
+
+3. Consequences for use and redistribution
+------------------------------------------
+
+The CC BY-NC-SA 4.0 components and adaptations of them may be used only for
+NonCommercial purposes and remain subject to Attribution and ShareAlike. The
+repository as distributed therefore must not be treated as a commercially
+usable whole. This does not add a NonCommercial restriction to independent
+components under other licenses.
+
+The GNU GPLv3 and CC BY-NC-SA 4.0 components retain separate terms. This file
+does not grant permission to relicense the aggregate under either license, or
+under any other single unified license. Redistribution must preserve the
+source-level notices, this file, and `NOTICE.md`, and must comply with every
+applicable component license. If combining components into one derivative
+work would impose incompatible obligations, obtain separate permission from
+the relevant copyright holders or do not distribute that combined work.
+
+Consult `NOTICE.md` and the source headers before using or redistributing any
+part of this repository.
